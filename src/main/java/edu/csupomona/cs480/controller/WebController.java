@@ -132,8 +132,12 @@ public class WebController {
 		return modelAndView;
 	}
 
+	@RequestMapping(value = "/cs4800/jasonyeh", method = RequestMethod.GET)
+	String jasonYehAPI(){
+		return "Jason Yeh was here";
+	}
 	@RequestMapping(value = "/cs4800/jessealcocer", method = RequestMethod.GET)
-	String JesseAlcocerAPI(){
+	String jesseAlcocerAPIlcocerAPI(){
 		return "Jesse Alcocer was NOT here :^D";
 	}
 
