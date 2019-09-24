@@ -132,4 +132,8 @@ public class WebController {
 		return modelAndView;
 	}
 
+	@RequestMapping(value = /cs4800/jasonyeh, method = RequestMethod.GET) {
+		return "Jason Yeh was here";
+	}
+
 }
