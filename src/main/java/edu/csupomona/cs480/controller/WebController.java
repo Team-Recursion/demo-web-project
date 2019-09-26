@@ -14,6 +14,9 @@ import edu.csupomona.cs480.App;
 import edu.csupomona.cs480.data.User;
 import edu.csupomona.cs480.data.provider.UserManager;
 
+import com.google.common.io.Files;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * This is the controller used by Spring framework.
@@ -144,5 +147,10 @@ public class WebController {
 	@RequestMapping(value = "/cs4800/jessealcocer", method = RequestMethod.GET)
 	String jesseAlcocerAPIlcocerAPI(){
 		return "Jesse Alcocer was NOT here :^D";
+	}
+	@RequestMapping(value = "/cs4800/guavadummyfunction", method = RequestMethod.GET)
+	String guavadummyfunction() throws IOException{
+		        String newFileName = "newfile.txt";
+                Files.touch(new File(newFileName));
 	}
 }
